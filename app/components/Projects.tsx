@@ -12,7 +12,7 @@ export default function Projects() {
           title={"What\nI ship."}
         />
 
-        <div>
+        <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
           {PROJECTS.map((p) => (
             <ProjectCard key={p.slug} project={p} />
           ))}
