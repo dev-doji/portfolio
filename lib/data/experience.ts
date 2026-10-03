@@ -9,6 +9,15 @@ export type Experience = {
 
 export const EXPERIENCE: Experience[] = [
   {
+    company: "WorldQuant University",
+    role: "MSc Financial Engineering — in progress",
+    period: "2026 — 2029",
+    location: "Online",
+    summary:
+      "Studying quantitative finance alongside engineering work: financial modeling, derivative pricing, machine learning for finance, and portfolio management.",
+    stack: ["Quantitative finance", "Derivative pricing", "ML for finance", "Portfolio management"],
+  },
+  {
     company: "Firm Foundation & Dominion Academy",
     role: "Proprietor",
     period: "2026 — Present",
@@ -19,12 +28,21 @@ export const EXPERIENCE: Experience[] = [
   },
   {
     company: "Pagrin",
-    role: "Frontend Engineer",
-    period: "2025 — Present",
+    role: "Senior Frontend Engineer",
+    period: "2025 — 2026",
     location: "Remote",
     summary:
-      "Lead the frontend across a multi-app Turborepo: partners dashboard, embeddable web SDK, and the shared @pagrin/ai-chat, /analytics, /i18n, /ui packages. Designed and shipped the dashboard interface, the embeddable SDK surface, and the i18n + analytics pipeline that powers both apps.",
+      "Led the frontend across a multi-app Turborepo: partners dashboard, embeddable web SDK, and the shared @pagrin/ai-chat, /analytics, /i18n, /ui packages. Designed and shipped the dashboard interface, the embeddable SDK surface, and the i18n + analytics pipeline that powers both apps.",
     stack: ["Next.js 16", "Turborepo", "next-intl", "PostHog", "React 19", "ECharts"],
+  },
+  {
+    company: "Tokkenly",
+    role: "Product Engineering Lead",
+    period: "2025 — 2026",
+    location: "Remote",
+    summary:
+      "Led product engineering for Tokkenly, a money and investing app built on Base: custodial dollar accounts, P2P sends, and naira conversion. Built the double-entry accounting interface and the send flows.",
+    stack: ["Next.js", "React 19", "Tailwind CSS", "Base", "USDC", "Framer Motion"],
   },
   {
     company: "Tita Group",
@@ -36,12 +54,12 @@ export const EXPERIENCE: Experience[] = [
     stack: ["Next.js 16", "React 19", "TanStack Query", "Framer Motion", "viem", "wagmi"],
   },
   {
-    company: "Foniolabs",
-    role: "Founder — Personal Lab",
+    company: "Fonio Labs",
+    role: "Founder",
     period: "2025 — Present",
-    location: "Personal project",
+    location: "Jos, Nigeria",
     summary:
-      "Foniolabs is my personal lab — where I experiment with tech for education and web3 in my own time. Most recently I migrated foniolabs.xyz to Sanity + Next.js + Vercel: 9 document types, 8 reusable section blocks, custom Studio components (slug-with-auto-redirect, SEO preview, OG preview, presentation tool), and Claude Code + Sanity MCP wired in so I publish content by prompting. Lighthouse 95+ across the board.",
+      "Fonio Labs is the technology studio I founded in October 2025. Its products are Rabit (embedded wallet SDK), Rhodium (WhatsApp checkout with auto-confirmed transfers), and SkoolBox (offline-first AI tutor). I also migrated foniolabs.xyz to Sanity + Next.js + Vercel: 9 document types, 8 reusable section blocks, custom Studio components (slug-with-auto-redirect, SEO preview, OG preview, presentation tool), and Claude Code + Sanity MCP wired in so I publish content by prompting. Lighthouse 95+ across the board.",
     stack: ["Next.js 16", "Sanity", "GROQ", "Claude Code MCP", "HubSpot", "Vercel"],
   },
   {
@@ -50,7 +68,7 @@ export const EXPERIENCE: Experience[] = [
     period: "2020 — Present",
     location: "Jos, Nigeria",
     summary:
-      "Built and maintain Rabit, a MIT-licensed embedded wallet SDK with non-custodial Shamir-based key recovery — 11 packages, EVM + Solana, `create-rabit-app` scaffolder. Earlier: shipped wallets, on/off-ramps, PvP dApps, and fintech tools for clients across Africa and Europe.",
+      "Built and maintain Rabit, a MIT-licensed embedded wallet SDK with non-custodial Shamir-based key recovery — 12 packages, EVM + Solana, `create-rabit-app` scaffolder. Earlier: shipped wallets, on/off-ramps, PvP dApps, and fintech tools for clients across Africa and Europe.",
     stack: ["TypeScript", "Solidity", "viem", "@solana/web3.js", "Tauri", "Rust"],
   },
 ];

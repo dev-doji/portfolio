@@ -39,7 +39,7 @@ const PRINCIPLES = [
   },
   {
     title: "Software is a multiplier, not a magic trick.",
-    body: "AI-native tooling lets a small team operate like a large one. Claude Code is in my flow every day; on Foniolabs, my personal lab, Sanity MCP runs the publishing pipeline so I ship content by prompting. The leverage is real.",
+    body: "AI-native tooling lets a small team operate like a large one. Claude Code is in my flow every day; at Fonio Labs, the studio I founded, Sanity MCP runs the publishing pipeline so I ship content by prompting. The leverage is real.",
   },
   {
     title: "Ship to where people actually are.",

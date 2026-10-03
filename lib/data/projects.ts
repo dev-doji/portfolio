@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
       "Sell on WhatsApp. Get paid without the screenshot. Conversational checkout with auto-confirmed bank transfers and Quai crypto rails.",
     year: "2025 — Present",
     role: "Lead Engineer · Solo build",
-    org: "Foniolabs",
+    org: "Fonio Labs",
     stack: ["Next.js", "React 19", "Tailwind CSS", "WhatsApp Cloud API", "Paystack", "Arbitrum", "Quai"],
     outcome:
       "Turns WhatsApp chats into automated checkouts. Virtual dedicated account numbers confirm transfers in ~2s with zero manual screenshot verification and instant naira ledger settlement.",
@@ -35,12 +35,12 @@ export const PROJECTS: Project[] = [
     tagline:
       "The bank for your digital dollars. Hold, spend, and invest USDC on Base with double-entry ledgers, gasless sends, and compliant fiat rails.",
     year: "2025 — 2026",
-    role: "Lead Frontend Engineer",
+    role: "Product Engineering Lead",
     org: "Tokkenly",
     stack: ["Next.js", "React 19", "Tailwind CSS", "Base", "USDC", "Framer Motion", "Web3"],
     outcome:
       "Custodial dollar accounts on Base engineered to six decimal places. Built the double-entry accounting interface, zero-fee P2P sends, and upcoming licensed naira convert/bill pay.",
-    demo: "https://tokkenly-website.vercel.app/",
+    demo: "https://tokkenly.com/",
   },
   {
     slug: "stim",
@@ -61,10 +61,10 @@ export const PROJECTS: Project[] = [
     index: "04",
     title: "Rabit",
     tagline:
-      "Open-source embedded wallet SDK. 11-package Turborepo, EVM + Solana, 2-of-3 Shamir Secret Sharing for non-custodial recovery.",
+      "Open-source embedded wallet SDK. 12-package Turborepo, EVM + Solana, 2-of-3 Shamir Secret Sharing for non-custodial recovery.",
     year: "2025",
     role: "Creator · Maintainer",
-    org: "Open source",
+    org: "Fonio Labs · open source",
     stack: ["TypeScript", "Turborepo", "Changesets", "viem", "@solana/web3.js"],
     outcome:
       "MIT-licensed SDK with a `create-rabit-app` scaffolder, full CONTRIBUTING / SECURITY / CoC, and key recovery that doesn't require a custodian. The wallet layer that should have existed.",
@@ -78,8 +78,8 @@ export const PROJECTS: Project[] = [
     title: "Pagrin",
     tagline:
       "Partners dashboard + embeddable web SDK on a multi-app Turborepo with shared AI chat, analytics, and i18n packages.",
-    year: "2025 — Present",
-    role: "Frontend engineer",
+    year: "2025 — 2026",
+    role: "Senior frontend engineer",
     org: "Pagrin",
     stack: ["Next.js 16", "Turborepo", "React 19", "next-intl", "@pagrin/ai-chat", "PostHog"],
     outcome:
@@ -93,7 +93,7 @@ export const PROJECTS: Project[] = [
     title: "TitaCenter",
     tagline:
       "Fintech super-app: on-ramp, off-ramp, exchange, trade, invoicing, payment-gateway, and wallet — one product, one team.",
-    year: "2024 — 2025",
+    year: "2024 — Present",
     role: "Lead frontend engineer",
     org: "Tita Group",
     stack: ["Next.js 16", "React 19", "TanStack Query", "Framer Motion", "Recharts"],
@@ -106,10 +106,10 @@ export const PROJECTS: Project[] = [
     index: "07",
     title: "SkoolBox",
     tagline:
-      "Offline-first AI tutor for Nigerian classrooms with intermittent internet. Tauri 2 + Rust + local LLM. Built under Foniolabs, designed for the school I run.",
+      "Offline-first AI tutor for Nigerian classrooms with intermittent internet. Tauri 2 + Rust + local LLM. Built under Fonio Labs, designed for the school I run.",
     year: "2025 — Present",
     role: "Product engineer",
-    org: "Foniolabs · school pilot",
+    org: "Fonio Labs · school pilot",
     stack: ["Tauri 2", "Rust", "React 18", "SQLite", "KaTeX", "mammoth"],
     outcome:
       "A ~12MB desktop app that gives teachers AI-assisted lesson planning and students an AI tutor — without depending on the internet. Pilot deploys into the school I run.",
@@ -118,12 +118,12 @@ export const PROJECTS: Project[] = [
   {
     slug: "foniolabs",
     index: "08",
-    title: "Foniolabs",
+    title: "Fonio Labs",
     tagline:
-      "My personal lab for tech in education and web3. Migrated its site to Sanity + Next.js with Claude Code MCP wired into the editor flow.",
-    year: "2026",
-    role: "Founder · solo build",
-    org: "Personal lab",
+      "The technology studio I founded, behind Rabit, Rhodium, and SkoolBox. Migrated its site to Sanity + Next.js with Claude Code MCP wired into the editor flow.",
+    year: "2025 — Present",
+    role: "Founder",
+    org: "Technology studio",
     stack: ["Next.js 16", "Sanity", "GROQ", "Vercel", "Claude Code MCP", "HubSpot"],
     outcome:
       "I publish content by prompting Claude Code. Lighthouse 95+ across the board, zero SEO ranking drop after DNS cutover.",

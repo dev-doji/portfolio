@@ -1,8 +1,10 @@
 const TOKENS = [
-  "Pagrin",
+  "Fonio Labs",
   "Tita Group",
   "Firm Foundation & Dominion Academy",
-  "Foniolabs",
+  "Pagrin",
+  "Tokkenly",
+  "Rhodium",
   "Rabit",
   "SkoolBox",
   "Stim",

@@ -15,7 +15,7 @@ const PILLARS = [
   {
     tag: "01 · Engineering",
     title: "I ship product, not slides.",
-    body: "Five years of building production software across web, Web3, and AI-native tooling. Frontend engineer at Pagrin, where I design and ship the interfaces — partners dashboard, embeddable web SDK, shared AI chat and analytics packages — across a multi-app Turborepo. Maintainer of Rabit, a MIT-licensed embedded wallet SDK with non-custodial key recovery.",
+    body: "Five years of building production software across web, Web3, and AI-native tooling. At Pagrin I led the frontend as senior engineer — partners dashboard, embeddable web SDK, shared AI chat and analytics packages — across a multi-app Turborepo. Maintainer of Rabit, a MIT-licensed embedded wallet SDK with non-custodial key recovery.",
   },
   {
     tag: "02 · Operating",

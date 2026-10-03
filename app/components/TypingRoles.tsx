@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 
 const ROLES = [
-  "Frontend engineer @ Pagrin.",
+  "Founder @ Fonio Labs.",
+  "Senior frontend engineer.",
   "Building for Tita Group.",
   "Open-source maintainer.",
   "Proprietor — Firm Foundation & Dominion Academy.",

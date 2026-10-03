@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     template: "%s — Emmanuel Doji",
   },
   description:
-    "Frontend engineer at Pagrin, builder for Tita Group, open-source maintainer (Rabit), and proprietor of Firm Foundation & Dominion Academy in Jos. AI-native software, fintech, and education in one operator.",
+    "Founder of Fonio Labs, senior frontend engineer for Tita Group, open-source maintainer (Rabit), and proprietor of Firm Foundation & Dominion Academy in Jos. AI-native software, fintech, and education in one operator.",
   keywords: [
     "Emmanuel Doji",
     "Pagrin",
@@ -42,7 +42,9 @@ export const metadata: Metadata = {
     "Firm Foundation School",
     "Rabit Wallet",
     "SkoolBox",
-    "Foniolabs",
+    "Fonio Labs",
+    "Rhodium",
+    "Tokkenly",
     "Frontend Engineer",
     "Web3 Engineer",
     "Next.js Engineer",
@@ -59,14 +61,14 @@ export const metadata: Metadata = {
     siteName: "Emmanuel Doji",
     title: "Emmanuel Doji — Engineer, Operator, Educator",
     description:
-      "Frontend engineer at Pagrin · builder for Tita Group · maintainer of Rabit · proprietor of Firm Foundation & Dominion Academy. Shipping software, fintech, and education from Jos, Nigeria.",
+      "Founder of Fonio Labs · senior frontend engineer for Tita Group · maintainer of Rabit · proprietor of Firm Foundation & Dominion Academy. Shipping software, fintech, and education from Jos, Nigeria.",
     images: [{ url: "/api/og", width: 1200, height: 630, alt: "Emmanuel Doji" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Emmanuel Doji — Engineer, Operator, Educator",
     description:
-      "Frontend engineer · open-source maintainer · school proprietor. AI-native software, fintech, and education.",
+      "Founder · senior frontend engineer · open-source maintainer · school proprietor. AI-native software, fintech, and education.",
     images: ["/api/og"],
   },
   robots: { index: true, follow: true },
