@@ -2,21 +2,24 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import Magnetic from "./Magnetic";
 import Logo from "./Logo";
 import { SOCIALS } from "@/lib/data/socials";
+import { OPEN_PALETTE_EVENT } from "./CommandPalette";
 
 const LINKS = [
-  { href: "#about", label: "About" },
-  { href: "#work", label: "Work" },
-  { href: "#leadership", label: "Leadership" },
-  { href: "#experience", label: "Experience" },
-  { href: "#contact", label: "Contact" },
+  { href: "/#about", label: "About" },
+  { href: "/#work", label: "Work" },
+  { href: "/#experience", label: "Experience" },
+  { href: "/blog", label: "Blog" },
+  { href: "/#contact", label: "Contact" },
 ];
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const [mac, setMac] = useState(false);
+
+  useEffect(() => setMac(/Mac|iPhone|iPad/.test(navigator.platform)), []);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 32);
@@ -42,9 +45,9 @@ export default function Nav() {
         }`}
       >
         <div className="container-x flex h-16 items-center justify-between md:h-20">
-          <a href="#top" className="flex items-center gap-3" data-cursor="hover" aria-label="Doji — home">
+          <a href="/#top" className="flex items-center gap-3" data-cursor="hover" aria-label="Emmanuel Doji — home">
             <Logo className="h-6 w-auto md:h-7" />
-            <span className="hidden font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-mute)] sm:inline">
+            <span className="hidden font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-mute)] sm:inline">
               Emmanuel Doji
             </span>
           </a>
@@ -54,7 +57,7 @@ export default function Nav() {
               <a
                 key={link.href}
                 href={link.href}
-                className="group relative font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-ink)]"
+                className="group relative py-2 font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-ink)]"
                 data-cursor="hover"
               >
                 <span className="relative">
@@ -66,12 +69,14 @@ export default function Nav() {
           </nav>
 
           <div className="hidden md:block">
-            <Magnetic>
-              <a href="#contact" className="btn-ink">
-                Let&apos;s talk
-                <span aria-hidden>→</span>
-              </a>
-            </Magnetic>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event(OPEN_PALETTE_EVENT))}
+              className="flex items-center gap-3 rounded-lg border border-[var(--color-line)] px-3 py-2 font-mono text-xs text-[var(--color-mute)] transition-colors hover:text-[var(--color-ink)]"
+            >
+              Search
+              <kbd className="rounded bg-[var(--color-paper-2)] px-1.5 py-0.5 text-xs">{mac ? "⌘ K" : "Ctrl K"}</kbd>
+            </button>
           </div>
 
           <button
@@ -104,7 +109,7 @@ export default function Nav() {
             animate={{ y: 0 }}
             exit={{ y: "-100%" }}
             transition={{ duration: 0.6, ease: [0.85, 0, 0.15, 1] }}
-            className="fixed inset-0 z-30 flex flex-col bg-[var(--color-ink)] pt-24 text-[var(--color-paper)] md:hidden"
+            className="fixed inset-0 z-30 flex flex-col bg-[var(--color-paper-2)] pt-24 text-[var(--color-ink)] md:hidden"
           >
             <nav className="container-x mt-8 flex flex-1 flex-col gap-6">
               {LINKS.map((link, i) => (

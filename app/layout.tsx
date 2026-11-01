@@ -1,14 +1,11 @@
 import type { Metadata, Viewport } from "next";
-import { Instrument_Serif, Inter, JetBrains_Mono } from "next/font/google";
+import { Bricolage_Grotesque, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import LenisProvider from "./components/LenisProvider";
-import Nav from "./components/Nav";
-import Loader from "./components/Loader";
+import SiteChrome from "./components/SiteChrome";
 
-const display = Instrument_Serif({
+const display = Bricolage_Grotesque({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-instrument",
+  variable: "--font-bricolage",
   display: "swap",
 });
 
@@ -29,11 +26,11 @@ const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://emmanueldoji.xyz";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Emmanuel Doji — Engineer, Operator, Educator",
+    default: "Emmanuel Doji — Frontend Engineer",
     template: "%s — Emmanuel Doji",
   },
   description:
-    "Founder of Fonio Labs, senior frontend engineer for Tita Group, open-source maintainer (Rabit), and proprietor of Firm Foundation & Dominion Academy in Jos. AI-native software, fintech, and education in one operator.",
+    "Frontend engineer, product lead at Tokkenly, founder of Fonio Labs, and proprietor of Firm Foundation & Dominion Academy in Jos, Nigeria.",
   keywords: [
     "Emmanuel Doji",
     "Pagrin",
@@ -59,14 +56,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: SITE_URL,
     siteName: "Emmanuel Doji",
-    title: "Emmanuel Doji — Engineer, Operator, Educator",
+    title: "Emmanuel Doji — Frontend Engineer",
     description:
       "Founder of Fonio Labs · senior frontend engineer for Tita Group · maintainer of Rabit · proprietor of Firm Foundation & Dominion Academy. Shipping software, fintech, and education from Jos, Nigeria.",
     images: [{ url: "/api/og", width: 1200, height: 630, alt: "Emmanuel Doji" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Emmanuel Doji — Engineer, Operator, Educator",
+    title: "Emmanuel Doji — Frontend Engineer",
     description:
       "Founder · senior frontend engineer · open-source maintainer · school proprietor. AI-native software, fintech, and education.",
     images: ["/api/og"],
@@ -76,7 +73,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fafaf7",
+  themeColor: "#f6f5f1",
   width: "device-width",
   initialScale: 1,
 };
@@ -85,11 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${display.variable} ${sans.variable} ${mono.variable}`}>
       <body>
-        <LenisProvider>
-          <Loader />
-          <Nav />
-          {children}
-        </LenisProvider>
+        <SiteChrome>{children}</SiteChrome>
       </body>
     </html>
   );

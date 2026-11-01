@@ -44,7 +44,7 @@ export default async function CaseStudiesIndex() {
                   {frontmatter.stack.slice(0, 5).map((s) => (
                     <li
                       key={s}
-                      className="rounded-full border border-[var(--color-line)] px-2.5 py-0.5 font-mono text-[10px] uppercase tracking-wider text-[var(--color-mute)]"
+                      className="rounded-full border border-[var(--color-line)] px-2.5 py-0.5 font-mono text-xs uppercase tracking-wider text-[var(--color-mute)]"
                     >
                       {s}
                     </li>

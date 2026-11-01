@@ -2,33 +2,17 @@ type Props = {
   className?: string;
 };
 
-// Monoline geometric "Doji" wordmark — strokes inherit `currentColor`
-// so it adapts to light (nav) and dark (footer / mobile menu) surfaces.
+// The "ED" mark: three bars and an open D. Fills inherit `currentColor`
+// so it adapts to any surface.
 export default function Logo({ className = "" }: Props) {
   return (
-    <svg
-      viewBox="0 0 150 80"
-      fill="none"
-      className={className}
-      role="img"
-      aria-label="Doji"
-    >
-      <g
-        stroke="currentColor"
-        strokeWidth={3.4}
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="M22 18 L22 62" />
-        <path d="M22 18 A 22 22 0 0 1 22 62" />
-        <circle cx="74" cy="48" r="14" />
-        <path d="M104 34 L104 63 A 9 9 0 0 1 90 70.5" />
-        <path d="M122 34 L122 62" />
+    <svg viewBox="0 0 398 294" fill="none" className={className} role="img" aria-label="ED">
+      <g fill="currentColor">
+        <rect width="166" height="38" />
+        <rect y="127" width="135" height="38" />
+        <rect y="256" width="166" height="38" />
       </g>
-      <g fill="currentColor" stroke="none">
-        <circle cx="104" cy="25" r="2.7" />
-        <circle cx="122" cy="25" r="2.7" />
-      </g>
+      <path d="M206 19 H251 A128 128 0 0 1 251 275 H206" stroke="currentColor" strokeWidth="38" />
     </svg>
   );
 }

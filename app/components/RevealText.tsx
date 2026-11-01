@@ -29,18 +29,18 @@ export default function RevealText({
   return (
     <As className={className}>
       {lines.map((line, i) => (
-        <span key={i} className="reveal-line">
-          <motion.span
-            className="block"
-            variants={lineVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-10% 0px" }}
-            custom={i * (stagger / 0.08) + delay}
-          >
-            {line || " "}
+        // The mask is what gets observed: the hidden line sits outside it, so it never intersects.
+        <motion.span
+          key={i}
+          className="reveal-line"
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, margin: "-10% 0px" }}
+        >
+          <motion.span className="block" variants={lineVariants} custom={i * (stagger / 0.08) + delay}>
+            {line || " "}
           </motion.span>
-        </span>
+        </motion.span>
       ))}
     </As>
   );

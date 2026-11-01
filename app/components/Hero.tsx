@@ -1,154 +1,86 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiArrowUpRight, FiArrowDown } from "react-icons/fi";
+import { FiArrowDown, FiArrowUpRight } from "react-icons/fi";
 import { SiGithub, SiX } from "react-icons/si";
 import { FaLinkedin } from "react-icons/fa";
+import DotField from "./DotField";
 import Magnetic from "./Magnetic";
+import Terminal from "./Terminal";
 import TypingRoles from "./TypingRoles";
 import { SOCIALS } from "@/lib/data/socials";
 
+const LINKS = [
+  { href: SOCIALS.github, label: "GitHub", icon: <SiGithub /> },
+  { href: SOCIALS.linkedin, label: "LinkedIn", icon: <FaLinkedin /> },
+  { href: SOCIALS.twitter, label: "X", icon: <SiX /> },
+];
+
 export default function Hero() {
   return (
-    <section
-      id="top"
-      className="relative flex min-h-[100svh] flex-col justify-between overflow-hidden pt-28 md:pt-36"
-    >
-      <div className="container-x">
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <span className="eyebrow">Jos, Nigeria · Builder · Operator · Educator</span>
-          <span className="font-mono text-xs text-[var(--color-mute)]">
-            <span className="mr-2 inline-block h-2 w-2 translate-y-[0.15em] rounded-full bg-emerald-500" />
-            Shipping with Fonio Labs · Tita Group · Firm Foundation &amp; Dominion Academy
-          </span>
-        </div>
-      </div>
-
-      <div className="container-x mt-12 md:mt-20">
+    <section id="top" className="relative flex min-h-[100svh] flex-col justify-center overflow-hidden pb-14 pt-28 md:pt-32">
+      <DotField />
+      <div className="container-x relative grid items-center gap-12 lg:grid-cols-12">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5, duration: 0.4 }}
+          className="min-w-0 lg:col-span-7"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.05, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
         >
-          <h1 className="display text-[4rem] leading-[0.9] sm:text-[6rem] md:text-[9rem] lg:text-[12rem] xl:text-[14rem]">
-            <span className="block reveal-line">
-              <motion.span
-                className="block italic text-[var(--color-mute)]"
-                initial={{ y: "110%" }}
-                animate={{ y: 0 }}
-                transition={{ delay: 1.55, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              >
-                I&apos;m
-              </motion.span>
-            </span>
-            <span className="block reveal-line">
-              <motion.span
-                className="block"
-                initial={{ y: "110%" }}
-                animate={{ y: 0 }}
-                transition={{ delay: 1.7, duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
-              >
-                Emmanuel Doji.
-              </motion.span>
-            </span>
+          <p className="eyebrow">
+            <span className="mr-2 inline-block h-2 w-2 rounded-full bg-[var(--color-accent)]" />
+            Frontend engineer · Jos, Nigeria
+          </p>
+          <h1 className="display mt-6 text-[3.4rem] sm:text-[5rem] xl:text-[6.5rem]">
+            I build interfaces people enjoy using.
           </h1>
+          <p className="mt-6 font-mono text-base text-[var(--color-accent)] md:text-lg">
+            <TypingRoles />
+          </p>
+          <p className="mt-5 max-w-xl text-base text-[var(--color-mute)] md:text-lg">
+            I&apos;m Emmanuel Doji, product lead at{" "}
+            <span className="text-[var(--color-ink)]">Tokkenly</span>, founder of{" "}
+            <span className="text-[var(--color-ink)]">Fonio Labs</span>, and proprietor of a school in
+            Jos. Most of my work is in the front end, in fintech, Web3 and education.
+          </p>
 
-          <div className="mt-10 grid grid-cols-1 items-end gap-10 md:mt-16 md:grid-cols-[1fr_auto]">
-            <motion.div
-              className="max-w-xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2.1, duration: 0.6 }}
-            >
-              <p className="mb-3 font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-mute)]">
-                Currently
-              </p>
-              <p className="font-display text-2xl leading-tight md:text-3xl">
-                <TypingRoles />
-              </p>
-              <p className="mt-6 max-w-md text-base text-[var(--color-mute)] md:text-lg">
-                Founder of <span className="text-[var(--color-ink)]">Fonio Labs</span>,
-                senior frontend engineer shipping interfaces for{" "}
-                <span className="text-[var(--color-ink)]">Tita Group</span>, maintainer of
-                open-source SDKs, and proprietor of a school in Jos, Plateau State. I build at
-                the seam of software, business, and education — and I write code with Claude
-                Code in the loop every single day.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 2.3, duration: 0.6 }}
-              className="flex flex-wrap items-center gap-3"
-            >
-              <Magnetic>
-                <a href="#work" className="btn-ink">
-                  See the work
-                  <FiArrowDown />
-                </a>
-              </Magnetic>
-              <Magnetic>
-                <a href="#contact" className="btn-outline">
-                  Start a conversation
-                  <FiArrowUpRight />
-                </a>
-              </Magnetic>
-            </motion.div>
+          <div className="mt-8 flex flex-wrap items-center gap-3">
+            <Magnetic>
+              <a href="#work" className="btn-ink">
+                See the work <FiArrowDown />
+              </a>
+            </Magnetic>
+            <Magnetic>
+              <a href="#contact" className="btn-outline">
+                Get in touch <FiArrowUpRight />
+              </a>
+            </Magnetic>
           </div>
-        </motion.div>
-      </div>
 
-      <div className="container-x mt-20 pb-10 md:mt-32 md:pb-14">
-        <div className="hairline mb-6" />
-        <div className="flex flex-wrap items-center justify-between gap-4">
-          <ul className="flex items-center gap-5 font-mono text-xs uppercase tracking-[0.18em]">
-            <li>
-              <a
-                href={SOCIALS.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2"
-                data-cursor="hover"
-              >
-                <SiGithub /> GitHub
-              </a>
-            </li>
-            <li>
-              <a
-                href={SOCIALS.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2"
-                data-cursor="hover"
-              >
-                <FaLinkedin /> LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href={SOCIALS.twitter}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2"
-                data-cursor="hover"
-              >
-                <SiX /> Twitter
-              </a>
-            </li>
+          <ul className="mt-8 flex items-center gap-5 font-mono text-xs text-[var(--color-mute)]">
+            {LINKS.map((l) => (
+              <li key={l.label}>
+                <a
+                  href={l.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 py-1.5 transition-colors hover:text-[var(--color-ink)]"
+                >
+                  {l.icon} {l.label}
+                </a>
+              </li>
+            ))}
           </ul>
-          <div className="font-mono text-xs text-[var(--color-mute)]">
-            <pre className="hidden md:block">{`> writing code, running businesses_`}</pre>
-          </div>
-          <motion.div
-            initial={{ y: -4 }}
-            animate={{ y: 4 }}
-            transition={{ duration: 1.5, repeat: Infinity, repeatType: "mirror" }}
-            className="flex items-center gap-2 font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-mute)]"
-          >
-            Scroll <FiArrowDown />
-          </motion.div>
-        </div>
+        </motion.div>
+
+        <motion.div
+          className="min-w-0 lg:col-span-5"
+          initial={{ opacity: 0, y: 24 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <Terminal />
+        </motion.div>
       </div>
     </section>
   );

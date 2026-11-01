@@ -9,15 +9,6 @@ export type Experience = {
 
 export const EXPERIENCE: Experience[] = [
   {
-    company: "WorldQuant University",
-    role: "MSc Financial Engineering — in progress",
-    period: "2026 — 2029",
-    location: "Online",
-    summary:
-      "Studying quantitative finance alongside engineering work: financial modeling, derivative pricing, machine learning for finance, and portfolio management.",
-    stack: ["Quantitative finance", "Derivative pricing", "ML for finance", "Portfolio management"],
-  },
-  {
     company: "Firm Foundation & Dominion Academy",
     role: "Proprietor",
     period: "2026 — Present",
@@ -27,22 +18,13 @@ export const EXPERIENCE: Experience[] = [
     stack: ["Operations", "Curriculum", "Edu-tech rollout", "Stakeholder ops"],
   },
   {
-    company: "Pagrin",
-    role: "Senior Frontend Engineer",
-    period: "2025 — 2026",
-    location: "Remote",
-    summary:
-      "Led the frontend across a multi-app Turborepo: partners dashboard, embeddable web SDK, and the shared @pagrin/ai-chat, /analytics, /i18n, /ui packages. Designed and shipped the dashboard interface, the embeddable SDK surface, and the i18n + analytics pipeline that powers both apps.",
-    stack: ["Next.js 16", "Turborepo", "next-intl", "PostHog", "React 19", "ECharts"],
-  },
-  {
     company: "Tokkenly",
-    role: "Product Engineering Lead",
-    period: "2025 — 2026",
+    role: "Product Lead",
+    period: "2025 — Present",
     location: "Remote",
     summary:
-      "Led product engineering for Tokkenly, a money and investing app built on Base: custodial dollar accounts, P2P sends, and naira conversion. Built the double-entry accounting interface and the send flows.",
-    stack: ["Next.js", "React 19", "Tailwind CSS", "Base", "USDC", "Framer Motion"],
+      "Lead the product and front end of Tokkenly, a stablecoin neobank on Base: one self-custodial app to hold digital dollars, send money, pay bills, buy and sell dollars with naira, gift stocks, and get exposure to US and Nigerian stocks. Own the roadmap, go-to-market, and the marketing site, dashboard, and back office.",
+    stack: ["Product strategy", "Next.js", "React 19", "Tailwind CSS", "Base", "USDC"],
   },
   {
     company: "Tita Group",
@@ -59,8 +41,17 @@ export const EXPERIENCE: Experience[] = [
     period: "2025 — Present",
     location: "Jos, Nigeria",
     summary:
-      "Fonio Labs is the technology studio I founded in October 2025. Its products are Rabit (embedded wallet SDK), Rhodium (WhatsApp checkout with auto-confirmed transfers), and SkoolBox (offline-first AI tutor). I also migrated foniolabs.xyz to Sanity + Next.js + Vercel: 9 document types, 8 reusable section blocks, custom Studio components (slug-with-auto-redirect, SEO preview, OG preview, presentation tool), and Claude Code + Sanity MCP wired in so I publish content by prompting. Lighthouse 95+ across the board.",
+      "Fonio Labs is the technology studio I founded in October 2025. Its products are Bluebase (operating system for maritime companies), Rabit (embedded wallet SDK), Rhodium (WhatsApp checkout with auto-confirmed transfers), and SkoolBox (offline-first AI tutor). I also migrated foniolabs.xyz to Sanity + Next.js + Vercel: 9 document types, 8 reusable section blocks, custom Studio components (slug-with-auto-redirect, SEO preview, OG preview, presentation tool), and Claude Code + Sanity MCP wired in so I publish content by prompting. Lighthouse 95+ across the board.",
     stack: ["Next.js 16", "Sanity", "GROQ", "Claude Code MCP", "HubSpot", "Vercel"],
+  },
+  {
+    company: "Pagrin",
+    role: "Senior Frontend Engineer",
+    period: "2025 — 2026",
+    location: "Remote",
+    summary:
+      "Led the frontend across a multi-app Turborepo: partners dashboard, embeddable web SDK, and the shared @pagrin/ai-chat, /analytics, /i18n, /ui packages. Designed and shipped the dashboard interface, the embeddable SDK surface, and the i18n + analytics pipeline that powers both apps.",
+    stack: ["Next.js 16", "Turborepo", "next-intl", "PostHog", "React 19", "ECharts"],
   },
   {
     company: "Independent / Open Source",

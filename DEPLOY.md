@@ -101,3 +101,13 @@ Once live:
 
 In Vercel: **Deployments → previous successful deploy → Promote to Production**. Reverts in
 ~10s without redeploying.
+
+## Blog CMS (Keystatic)
+
+Locally, run `npm run dev` and open http://localhost:3000/keystatic. Posts save to `content/blog`.
+
+To edit from the live site:
+
+1. Run `npm run dev` with `NEXT_PUBLIC_KEYSTATIC_GITHUB=true` and open /keystatic. Follow the prompts to create the GitHub App for dev-doji/portfolio.
+2. Add `NEXT_PUBLIC_KEYSTATIC_GITHUB=true` and the `KEYSTATIC_GITHUB_CLIENT_ID`, `KEYSTATIC_GITHUB_CLIENT_SECRET`, `KEYSTATIC_SECRET` and `NEXT_PUBLIC_KEYSTATIC_GITHUB_APP_SLUG` values it creates to Vercel.
+3. Publishing a post then commits it to GitHub, and Vercel rebuilds the site.

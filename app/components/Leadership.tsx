@@ -57,7 +57,7 @@ export default function Leadership() {
         <SectionHeading
           index="04"
           eyebrow="Leadership & Education"
-          title={"What I&apos;m\nbuilding offline."}
+          title={"What I'm\nbuilding offline."}
         />
 
         <div className="grid gap-12 md:grid-cols-12 md:gap-16">
@@ -82,10 +82,10 @@ export default function Leadership() {
               className="bg-[var(--color-paper)] p-8 md:p-10"
             >
               <div className="flex items-baseline justify-between">
-                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-mute)]">
+                <p className="font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-mute)]">
                   {r.role} · since {r.since}
                 </p>
-                <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-mute)]">
+                <span className="font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-mute)]">
                   {r.location}
                 </span>
               </div>
@@ -118,7 +118,7 @@ export default function Leadership() {
                 transition={{ duration: 0.5, delay: i * 0.08 }}
                 className="bg-[var(--color-paper)] p-8 md:p-10"
               >
-                <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-mute)]">
+                <p className="font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-mute)]">
                   {String(i + 1).padStart(2, "0")}
                 </p>
                 <h3

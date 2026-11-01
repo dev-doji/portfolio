@@ -57,7 +57,7 @@ export default function About() {
                 className="object-cover object-top grayscale transition-[filter,transform] duration-700 ease-out group-hover:grayscale-0 group-hover:scale-[1.02]"
               />
             </div>
-            <figcaption className="mt-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-mute)]">
+            <figcaption className="mt-3 flex items-center justify-between font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-mute)]">
               <span>Emmanuel Doji</span>
               <span>Jos, Nigeria</span>
             </figcaption>

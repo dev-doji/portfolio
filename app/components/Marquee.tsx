@@ -4,6 +4,7 @@ const TOKENS = [
   "Firm Foundation & Dominion Academy",
   "Pagrin",
   "Tokkenly",
+  "Bluebase",
   "Rhodium",
   "Rabit",
   "SkoolBox",

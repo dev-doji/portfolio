@@ -50,7 +50,7 @@ export default function OpenSource() {
                 unoptimized
                 className="h-auto w-full"
               />
-              <p className="mt-3 px-2 font-mono text-[10px] uppercase tracking-[0.18em] text-[var(--color-mute)]">
+              <p className="mt-3 px-2 font-mono text-xs uppercase tracking-[0.18em] text-[var(--color-mute)]">
                 github.com/{username} · last 12 months
               </p>
             </div>

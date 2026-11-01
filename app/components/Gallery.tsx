@@ -58,7 +58,7 @@ export default function Gallery() {
                 className="object-cover grayscale transition-[filter,transform] duration-700 ease-out group-hover:grayscale-0 group-hover:scale-[1.03]"
               />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/60 to-transparent p-5 opacity-0 transition-opacity duration-500 group-hover:opacity-100">
-                <figcaption className="font-mono text-[10px] uppercase tracking-[0.18em] text-white">
+                <figcaption className="font-mono text-xs uppercase tracking-[0.18em] text-white">
                   {s.caption}
                 </figcaption>
               </div>

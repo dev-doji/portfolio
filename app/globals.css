@@ -1,13 +1,14 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #0a0a0a;
-  --color-paper: #fafaf7;
-  --color-paper-2: #f1f1ec;
-  --color-mute: #6b6b66;
-  --color-line: #d9d9d3;
+  --color-ink: #17181a;
+  --color-paper: #f6f5f1;
+  --color-paper-2: #edece6;
+  --color-mute: #62625c;
+  --color-line: #dcdbd3;
+  --color-accent: #17181a;
 
-  --font-display: var(--font-instrument), "Times New Roman", serif;
+  --font-display: var(--font-bricolage), system-ui, sans-serif;
   --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", monospace;
 }
@@ -28,12 +29,27 @@
   }
 
   ::selection {
-    background: var(--color-ink);
+    background: var(--color-accent);
     color: var(--color-paper);
   }
 
   body {
     overflow-x: hidden;
+  }
+
+  /* Anchors stop below the fixed header. */
+  html {
+    scroll-padding-top: 88px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
   }
 
   /* Lenis smooth scroll */
@@ -63,17 +79,18 @@
 
   .display {
     font-family: var(--font-display);
-    font-weight: 400;
-    line-height: 0.92;
-    letter-spacing: -0.02em;
+    font-weight: 600;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    text-wrap: balance;
   }
 
   .btn-ink {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-ink)] px-6 py-3 text-sm font-medium text-[var(--color-paper)] transition-transform duration-300 hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-[var(--color-accent)] px-5 py-3 text-sm font-semibold text-[var(--color-paper)] transition-transform duration-300 hover:-translate-y-0.5;
   }
 
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-[var(--color-ink)] px-6 py-3 text-sm font-medium text-[var(--color-ink)] transition-transform duration-300 hover:-translate-y-0.5;
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--color-line)] px-5 py-3 text-sm font-medium text-[var(--color-ink)] transition-transform duration-300 hover:-translate-y-0.5;
   }
 
   .hairline {
